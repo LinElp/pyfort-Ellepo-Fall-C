@@ -2,9 +2,9 @@ import random
 #premier épreuve hasard
 def bonneteau():
     L = ['A', 'B', 'C']
-    print("Bienvenue au jeu de bonneteau")
+    print("Bienvenue au jeu du bonneteau")
     print("Vous avez droit à 2 essaies")
-    print("Un clé est caché dans l")
+    print(f"Un clé est caché dans la liste : {L}")
     nb_tentatives = 2
     tentative = 0
     val_select = random.choice(L)
@@ -19,7 +19,7 @@ def bonneteau():
             else:
                 print("clé pas trouvé")
                 nb_tentatives = nb_tentatives - tentative
-                print("il vous reste", nb_tentatives, "essaies")
+                print(f"il vous reste {nb_tentatives} essaies")
         else:
             print("bonneteau inexistant:")
     print("Vous avez perdu,la clé se trouve sous le bonneteau", val_select)
@@ -56,7 +56,7 @@ def jeu_lance_des():
 #Fonction epreuve_hasard()
 def epreuve_hasard():
     """Pour la sélection aléatoire d'une épreuve hasard"""
-    epreuves = [jeu_lance_des(),bonneteau()]
+    epreuves = [jeu_lance_des,bonneteau]
     epreuve= random.choice(epreuves)
 
-    return epreuve
+    return epreuve()
