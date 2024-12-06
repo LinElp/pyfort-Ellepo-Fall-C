@@ -1,5 +1,5 @@
 import random
-def est_premier(n):
+def est_premier(n):     #
     nb_premier=False
     if n<=1:
         return nb_premier

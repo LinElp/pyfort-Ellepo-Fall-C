@@ -4,6 +4,6 @@ import random
 if __name__ == "__main__":
     #epreuve_math_factorielle()
     #epreuve_roulette_mathematique()
-    jeu_lance_des()
-
+    #jeu_lance_des()
+    epreuve_math_premier()
     #epreuve_math()
