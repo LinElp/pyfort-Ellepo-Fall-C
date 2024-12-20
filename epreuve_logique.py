@@ -54,15 +54,21 @@ def coup_maitre(grille,symbole):
 def tour_joueur(grille):
     valide = False
     while not valide:
-        ligne, colonne = int(input("Joueur X, c'est à vous. Où voulez-vous placer votre symbole ? ").split(','))
-        if grille[ligne - 1][colonne - 1] == " ":
-            grille[ligne - 1][colonne - 1] = 'X'
-            valide = True
+        entree = input("Joueur X, c'est à vous. Où voulez-vous placer votre symbole ? Entrez sous forme 'ligne,colonne'")
+        coordonnees = entree.split(',')
+        if len(coordonnees) == 2 and (48<ord(coordonnees[0])<52) and (48<ord(coordonnees[1])<52):
+            ligne = int(coordonnees[0]) - 1
+            colonne = int(coordonnees[0]) - 1
+            if 0 <= ligne < 3 and 0 <= colonne < 3:
+                if grille[ligne][colonne] == " ":
+                    grille[ligne][colonne] == 'X'
+                    valide = True
+                else:
+                    print("Cette case est déjà prise. Veuillez choisir une autre case.")
+            else:
+                print("Les coordonnées doivent être entre 1 et 3 pour chaque axe.")
         else:
-            print("Cette case est déjà prise. Veuillez choisir une autre case.")
-    if ValueError or IndexError:
-        print("Entrée invalide. Veuillez entrer les coordonnées sous forme (ligne,colonne).")
-
+            print("Entrée invalide. Assurez-vous de séparer les chiffres par une virgule et d'utiliser des nombres valides.")
 
 def tour_maitre(grille):
     ligne, colonne = coup_maitre(grille, symbole='O')
