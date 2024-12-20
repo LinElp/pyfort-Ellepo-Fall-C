@@ -90,7 +90,7 @@ def epreuve_math_premier():
         return False
 
 
-epreuve_math_premier()
+
 
 #Fonction epreuve_math()
 def epreuve_math():

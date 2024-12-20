@@ -1,5 +1,6 @@
 from epreuve_mathematiques import *
 from epreuves_hasard import *
+from epreuve_logique import *
 import random
 if __name__ == "__main__":
     #epreuve_math_factorielle()
@@ -7,4 +8,5 @@ if __name__ == "__main__":
     #jeu_lance_des()
     #epreuve_math_premier()
     #epreuve_math()
-    epreuve_hasard()
+    #epreuve_hasard()
+    jeu_tictactoe()
