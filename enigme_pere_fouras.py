@@ -1,5 +1,7 @@
 import json
 import random
+
+
 def charger_enigmes(fichier):
     with open("enigmes_PF.json", 'r',encoding='utf-8') as f:
         donnees=json.load(f)
@@ -26,5 +28,5 @@ def enigmes_pere_fouras():
 
 
 
-
-
+contenu=charger_enigmes("{} enigmesPF.json")
+print(contenu)
