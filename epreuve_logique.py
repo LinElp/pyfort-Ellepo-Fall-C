@@ -42,8 +42,18 @@ def coup_maitre(grille,symbole):
                     return (i,j)
                 grille[i][j] = " "
 
+    choix = []
     for i in range(3):
         for j in range(3):
-            if grille[i][j] == " "
+            if grille[i][j] == " ":
+                choix.append((i, j))
+    if choix :
+        return random.choice(choix)
+    else:
+        return None
 
+#def tour_joueur(grille):
 
+def tour_maitre(grille):
+    ligne, colonne = coup_maitre(grille, symbole:'O')
+    g
