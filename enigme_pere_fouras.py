@@ -3,7 +3,7 @@ import random
 
 
 def charger_enigmes(fichier):
-    with open("enigmes_PF.json", 'r',encoding='utf-8') as f:
+    with open("C:/Users/HP/Downloads/enigmesPF.json", 'r',encoding='utf-8') as f:
         donnees=json.load(f)
     print(donnees)
     enigmes=[{"question":e["question"],"reponse":e["reponse"]} for e in donnees]
@@ -11,10 +11,10 @@ def charger_enigmes(fichier):
 def enigmes_pere_fouras():
     L=charger_enigmes("enigmes_PF.json")
     enigme=random.choice(L)
-    print("Voici l'enigme choisi:",enigme)
+    print("Voici l'enigme choisi:",enigme["question"])
     nbre_essai=3
     while nbre_essai>0:
-        reponse=input("Entrer votre reponse:").lower
+        reponse=input("Entrer votre reponse:").lower()
         if reponse==enigme["reponse"]:
             print("Bravo! Réponse correcte")
             return True
@@ -25,8 +25,3 @@ def enigmes_pere_fouras():
             else:
                 print("Dommage! vous avez échoué")
                 return False
-
-
-
-contenu=charger_enigmes("{} enigmesPF.json")
-print(contenu)
