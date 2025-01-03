@@ -25,10 +25,6 @@ def jeu():
         print("4 - Énigme du Père Fouras")
         choix_epreuve = int(input("Choisissez un chiffre entre 1 et 4 pour le type d'épreuve: "))
 
-        if choix_epreuve not in ["1", "2", "3", "4"]:
-            print("Veuillez entrer un nombre valide entre 1 et 4.")
-            return
-
         choix_epreuve = int(choix_epreuve)
 
         # Gestion des épreuves
