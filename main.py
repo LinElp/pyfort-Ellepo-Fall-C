@@ -26,10 +26,3 @@ def jeu():
         choix_epreuve = int(input("Choisissez un chiffre entre & et 4 pour le type d'épreuve: "))
 
 
-if __name__ == "__main__":
-    #epreuve_math_factorielle()
-    #epreuve_roulette_mathematique()
-    #jeu_lance_des()
-    #epreuve_math_premier()
-    #epreuve_math()
-    #epreuve_hasard()
