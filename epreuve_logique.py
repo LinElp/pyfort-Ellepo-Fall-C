@@ -1,8 +1,5 @@
 import random
 
-
-import random
-
 def afficher_grille(grille):
     for i in range(3):
         if i > 0:
@@ -119,3 +116,5 @@ def jeu_tictactoe():
             break
 
 
+if __name__ == "__main__":
+    jeu_tictactoe()

@@ -3,9 +3,8 @@ import random
 
 
 def charger_enigmes(fichier):
-    with open("C:/Users/HP/Downloads/enigmesPF.json", 'r',encoding='utf-8') as f:
+    with open("C:/Users/ellep/OneDrive - Efrei/Bureau/Dépot_intermédiaire_ELLEPO_FALL/enigmesPF.json", 'r',encoding='utf-8') as f:
         donnees=json.load(f)
-    print(donnees)
     enigmes=[{"question":e["question"],"reponse":e["reponse"]} for e in donnees]
     return enigmes
 def enigmes_pere_fouras():
@@ -25,3 +24,6 @@ def enigmes_pere_fouras():
             else:
                 print("Dommage! vous avez échoué")
                 return False
+
+if __name__ == "__main__":
+    enigmes_pere_fouras()

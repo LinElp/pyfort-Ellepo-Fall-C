@@ -21,6 +21,7 @@ def epreuve_math_factorielle():
     bonne_reponse = Factorielle(n)          #Calcule de la factorielle du n choisi aléatoirement
 
     if reponse_joueur == bonne_reponse:     #Vérification de la réponse du joueur
+        return True
         print("Correct! Vous gagnez une clé.")
     else:
         print(f"Incorrect! La bonne réponse est {bonne_reponse}")
@@ -55,7 +56,7 @@ def epreuve_roulette_mathematique():
         for nombre in nombres:
             res *= nombre
 
-    print(f"Nombres sir la roulette :{nombres}")
+    print(f"Nombres sur la roulette :{nombres}")
     print(f"Calculez le résultat en combinant ces nombres avec une {operation}")
 
     reponse_joueur = int(input("Votre réponse: "))  # Réponse du joueur
@@ -63,6 +64,7 @@ def epreuve_roulette_mathematique():
     bonne_reponse = res # implémentation de la bonne réponse
 
     if reponse_joueur == bonne_reponse:  # Vérification de la réponse du joueur
+        return True
         print("Correct! Vous gagnez une clé.")
     else:
         print(f"Incorrect! La bonne réponse est {bonne_reponse}")
@@ -95,7 +97,7 @@ def epreuve_math_premier():
 #Fonction epreuve_math()
 def epreuve_math():
     """Pour la sélection aléatoire d'une épreuve mathematique"""
-    epreuves = [epreuve_math_factorielle,epreuve_roulette_mathematique]
+    epreuves = [epreuve_math_factorielle,epreuve_roulette_mathematique,epreuve_math_premier()]
     epreuve = random.choice(epreuves)
 
     return epreuve()

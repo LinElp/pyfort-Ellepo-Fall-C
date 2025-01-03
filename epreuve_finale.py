@@ -3,7 +3,7 @@ import random
 
 
 def salle_De_Tresor():
-    with open(r'C:\Users\HP\Downloads\indicesSalle.json', 'r', encoding='utf-8') as f:
+    with open(r'C:/Users/ellep/OneDrive - Efrei/Bureau/Dépot_intermédiaire_ELLEPO_FALL/indicesSalle (1).json', 'r', encoding='utf-8') as f:
         jeu_tv = json.load(f)
 
     annee = random.choice(list(jeu_tv['Fort Boyard'].keys()))

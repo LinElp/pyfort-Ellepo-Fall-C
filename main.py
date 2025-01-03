@@ -16,6 +16,7 @@ def jeu():
         equipe.append(nom_joueur)
         nb_joueurs += 1
     print("Votre équipe est prête!")
+
     cles_gagnees = 0
     while cles_gagnees < 3:
         print("Menu des épreuves:")
@@ -46,6 +47,8 @@ def jeu():
                 cles_gagnees += 1
 
         print(f"\n Clés obtenues : {cles_gagnees}/3\n")
+
+    salle_De_Tresor()
 
 
 if __name__ == "__main__":
