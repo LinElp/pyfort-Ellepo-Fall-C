@@ -10,12 +10,15 @@ Le projet "Fort Boyard Simulator" demande de développer un simulateur inspiré 
    - **Description :** Simulation de Fort Boyard avec des épreuves variées et une salle du trésor.  
    - **Fonctionnalités principales :** Constitution d'équipe, épreuves (mathématiques, hasard, logique, énigmes), collecte de clés et accès à la salle du trésor.  
    - **Technologies utilisées :** Python, JSON, bibliothèque random.  
-
+   
+   ♡❀˖⁺. ༶ ⋆˙⊹❀♡
+   
  **Installation :**  
    - Clonage du dépôt Git.  
    - Configuration des dépendances et environnement.  
 
-
+   ♡❀˖⁺. ༶ ⋆˙⊹❀♡
+   
  **Utilisation :**  
    - Toutes les fonctionnalités :
 
@@ -34,7 +37,7 @@ Le projet "Fort Boyard Simulator" demande de développer un simulateur inspiré 
 | 🔍 Enigme du Père Fouras          | Résoudre une énigme du Père Fouras.        |
 | 🏁 Épreuve finale                 | dernière étape du jeu, où les joueurs doivent deviner un mot-code pour accéder àla salle du trésor.      |
 
-
+   ♡❀˖⁺. ༶ ⋆˙⊹❀♡
  
  **Documentation technique :**  
 
@@ -114,9 +117,7 @@ Détails des algorithmes et fonctions implémentées pour chaque épreuve:
 - Les épreuves mathématiques et de logique testent les compétences du joueur en calcul et en résolution de problèmes.
 - Le jeu de **Tic-Tac-Toe** et l'**énigme du Père Fouras** ajoutent des éléments de stratégie et de réflexion pour gagner les clés.
 
-
- **Journal de Bord :**  
-  
+    ♡❀˖⁺. ༶ ⋆˙⊹❀♡  
 
 
  **Tests et validation :** 
