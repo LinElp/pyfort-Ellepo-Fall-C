@@ -24,6 +24,3 @@ def enigmes_pere_fouras():
             else:
                 print("Dommage! vous avez échoué")
                 return False
-
-if __name__ == "__main__":
-    enigmes_pere_fouras()
