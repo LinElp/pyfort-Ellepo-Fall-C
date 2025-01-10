@@ -1,3 +1,5 @@
+from tkinter.messagebox import ERROR
+
 from epreuve_mathematiques import *
 from epreuves_hasard import *
 from epreuve_logique import *

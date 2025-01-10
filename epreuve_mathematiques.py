@@ -83,13 +83,18 @@ def premier_plus_proche(n):
     return n
 
 def epreuve_math_premier():
+    global reponse
     n = random.randint(10, 20)
     print("Saisir le nombre de premier le plus proche de {}".format(n))
-    reponse = input("Entrer votre réponse: ")
-    if premier_plus_proche(n) == reponse:
-        return True
+    reponse_valide= False
+    while not reponse_valide:
+        reponse = input("Entrer votre réponse: ")
+    if reponse ==premier_plus_proche(n):
+        print("Correct!")
+        reponse_valide = True
     else:
-        return False
+        print("Incorrect!")
+    return reponse_valide
 
 
 
@@ -97,7 +102,7 @@ def epreuve_math_premier():
 #Fonction epreuve_math()
 def epreuve_math():
     """Pour la sélection aléatoire d'une épreuve mathematique"""
-    epreuves = [epreuve_math_factorielle,epreuve_roulette_mathematique,epreuve_math_premier()]
+    epreuves = [epreuve_math_factorielle,epreuve_roulette_mathematique,epreuve_math_premier]
     epreuve = random.choice(epreuves)
 
     return epreuve()

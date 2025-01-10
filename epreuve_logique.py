@@ -115,6 +115,3 @@ def jeu_tictactoe():
             print("Match nul !")
             break
 
-
-if __name__ == "__main__":
-    jeu_tictactoe()
